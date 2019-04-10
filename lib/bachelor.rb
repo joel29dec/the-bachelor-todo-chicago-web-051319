@@ -11,7 +11,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data.each do |k|
+  data.each do |season, contestant|
     binding.pry
     k.each do |key, value|
       if value == occupation
