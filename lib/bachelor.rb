@@ -3,7 +3,6 @@ def get_first_name_of_season_winner(data, season)
   
   data[season].each do |k|
     k.each do |key, value|
-      #puts "#{key}: #{value}"
       if key == "status" && value == "Winner" 
         return k["name"].split(" ").shift 
       end
@@ -12,7 +11,10 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  data[season].each do |k|
+    k.each do |key, value|
+      if value == occupation
+        binding.pry
 end
 
 def count_contestants_by_hometown(data, hometown)
