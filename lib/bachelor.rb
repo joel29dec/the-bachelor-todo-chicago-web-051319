@@ -54,6 +54,5 @@ def get_average_age_for_season(data, season)
     #contestant["age"].to_i.map do |value|
       value
        binding.pry
-    end
   end
 end
