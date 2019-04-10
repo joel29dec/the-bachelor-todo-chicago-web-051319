@@ -12,8 +12,8 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, contestant|
-    binding.pry
-    k.each do |key, value|
+    contestant.each do |key, value|
+      binding.pry
       if value == occupation
         binding.pry
       end
