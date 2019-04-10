@@ -50,7 +50,7 @@ end
 
 def get_average_age_for_season(data, season)
   data[season].each do |contestant|
-    contestant["age"].map do |value|
+    contestant["age"].to_i.map do |value|
       value
        binding.pry
     end
