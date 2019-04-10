@@ -54,4 +54,5 @@ def get_average_age_for_season(data, season)
     average_age << contestant["age"].to_i
   end
     average_age = total_age.reduce{|sum, x| sum + x} / total_age.length
+    binding.pry
 end
