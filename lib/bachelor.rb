@@ -49,10 +49,10 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  average_age = []
+  total_age = []
   data[season].each do |contestant|
     average_age << contestant["age"].to_i
   end
   binding.pry
-  average_age.average
+  total_age.length
 end
